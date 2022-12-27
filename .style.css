@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Cocogoose"rel="stylesheet");
+
+:root {
+  --black: #272a31;
+  --orange: #ec5242;
+  --grey: #d3d3d3;
+}
+
+body {
+  font-family: "Cocogoose", sans-serif;
+}
