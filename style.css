@@ -1,0 +1,18 @@
+:root {
+  --black: #272a31;
+  --orange: #ec5242;
+  --grey: #d3d3d3;
+}
+
+body {
+  font-family: "Cocogoose", sans-serif;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(Images/viber_image_2022-12-28_12-03-05-282.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
