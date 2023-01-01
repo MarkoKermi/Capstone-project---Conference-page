@@ -2,6 +2,10 @@
   --black: #272a31;
   --orange: #ec5242;
   --grey: #d3d3d3;
+  --white: #fff;
+  --medium-grey: #f6f7f8;
+  --red: #a83023;
+  --cards_color: #d3d3d31e;
 }
 
 body {
@@ -15,4 +19,87 @@ body {
   background-image: url(Images/viber_image_2022-12-28_12-03-05-282.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
+}
+
+.main_title {
+  color: var(--orange);
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+h1 {
+  text-transform: uppercase;
+  mix-blend-mode: multiply;
+}
+
+h3 {
+  mix-blend-mode: multiply;
+}
+
+.main_container > p {
+  border: 2px solid var(--white);
+  background-color: var(--medium-gray);
+  border-radius: 7px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.conference_date {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.conference_place {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+i {
+  color: var(--black);
+}
+
+.program_wraper {
+  display: grid;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  background-image: url(Images/card_background_img.jpeg);
+  background-size: 100vw 100vh;
+}
+
+.program_wraper > h2 {
+  color: var(--white);
+}
+
+.card_info {
+  padding-left: 5%;
+}
+
+.red_line {
+  display: inline-block;
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  width: 52px;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+.background_img {
+  width: 90%;
+  margin: 20px;
+  padding: 20px 30px;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--cards_color);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.card_title {
+  color: var(--orange);
+  font-size: 20px;
+  font-weight: 500;
+  width: 30%;
+  padding-left: 5%;
 }
