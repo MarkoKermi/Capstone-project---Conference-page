@@ -34,6 +34,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
     </style>
+   
   </head>
 
   <!-- First page -->
@@ -41,32 +42,28 @@
     <main>
       <header>
         <section class="main_container">
-          <div class="header_logo"></div>
-          <div class="menu_button">
-            <div>About</div>
-            <div>Program</div>
-            <div>Join</div>
-            <div>Sponsor</div>
-            <div>News</div>
-            <div>CC Campaign</div>
+          <div class="toolbar" id="portfolio">
+            <div class="header_logo"></div>
+            <ul class="menu_button">
+              <li><a href="about.html" class="nav-item">About</a></li>
+              <li><a href="#" class="nav-item"></a>Program</li>
+              <li><a href="#" class="nav-item"></a>Join</li>
+              <li><a href="#" class="nav-item"></a>Sponsor</li>
+              <li><a href="#" class="nav-item"></a>News</li>
+              <li><a href="#" class="nav-item"></a>CC Campaign</li>
+            </ul>
+            <nav><i class="fa-solid fa-bars"></i></nav>
           </div>
           <h3 class="main_title">"Hello! HVAC world"</h3>
           <h1 class="main_title">heating, cooling & vetilation summit 2023</h1>
-          <p>
+          <p class="main_lecture-info">
             We invite you to the fifth edition of the Heating, cooling and
             ventilation Engineering Forum, HVAC world Skopje 2023, which will
-            take place on 15 May at the Macedonian Philharmonic. The theme of
-            this edition will be Energy efficiency  and is addressed to
-            investors and developers, contractors, mechanical engineers,
-            consultants and project managers, and companies with solutions for
-            residential and commercial projects. HVAC world Skopje Forum will
-            host Mechanical engineers with outstanding projects. Through the
-            architectural presentations and discussions, HVAC world Skopje Forum
-            offers the latest information and knowledge, and the opportunity for
-            professional networking at the highest level.
+            take place on 15 May at the Macedonian Philharmonic. HVAC world Skopje Forum will
+            host Mechanical engineers with outstanding projects. 
           </p>
-          <h2 class="conference_date">2023.05.15(MON)~16(THU)</h2>
-          <h3 class="conference_place">@ Macedonian Philharmonic, Skopje</h3>
+          <p class="conference_date">2023.05.15(MON)~16(THU)</p>
+          <p class="conference_place">@ Macedonian Philharmonic, Skopje</p>
         </section>
 
         <!-- Program information -->
@@ -82,38 +79,34 @@
             </p>
           </div>
 
-          <!-- <section class="program_wraper"> -->
-          <!-- <h2 class="program_wraper_title">Main Program</h2> -->
-          <!-- <div class="red_line"></div> -->
           <div class="background_img">
-            <i style="font-size: 24px; color: white" class="fas">&#xf5da;</i>
-            <div class="card_title">Lecture</div>
+            <i style="font-size: 24px; color: white" class="fas">&#xf247;</i>
+            <div class="card_title">AHU selection</div>
             <p class="card_info">
-              Explanation of HVAC basics, energy efficiency systems and best use
+              Drawing and selection of air handling units
             </p>
           </div>
 
-          <!-- <section class="program_wraper"> -->
           <div class="background_img">
-            <i style="font-size: 24px; color: white" class="fas">&#xf5da;</i>
-            <div class="card_title">Lecture</div>
+            <i style="font-size: 24px; color: white" class="fas">&#xf5fd;</i>
+            <div class="card_title">VRV selection</div>
             <p class="card_info">
-              Explanation of HVAC basics, energy efficiency systems and best use
+              Drawing and selection of VRV units
             </p>
           </div>
 
-          <!-- <section class="program_wraper"> -->
-          <!-- <h2 class="program_wraper_title">Mai Program</h2> -->
-          <!-- <div class="red_line"></div> -->
           <div class="background_img">
-            <i style="font-size: 24px; color: white" class="fas">&#xf5da;</i>
-            <div class="card_title">Lecture</div>
+            <i style="font-size: 24px; color: white" class="fas">&#xf19d;</i>
+            <div class="card_title">Project</div>
             <p class="card_info">
-              Explanation of HVAC basics, energy efficiency systems and best use
+              Get your certificate for HVAC drawing and selection master
             </p>
           </div>
+          <button class="join" id="join">Join the next training</button>
         </section>
       </header>
     </main>
+    <scrip
+    src="script.js"></script>
   </body>
 </html>

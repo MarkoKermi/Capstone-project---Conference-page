@@ -1,15 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
 :root {
   --black: #272a31;
   --orange: #ec5242;
-  --grey: #d3d3d3;
+  --gray: #d3d3dd;
   --white: #fff;
-  --medium-grey: #f6f7f8;
+  --medium-gray: #f6f7f8;
   --red: #a83023;
   --cards_color: #d3d3d31e;
-}
-
-body {
-  font-family: "Cocogoose", sans-serif;
+  --yellow: #ffff00;
+  --partners_gray: #555353;
 }
 
 .main_container {
@@ -21,36 +26,194 @@ body {
   background-repeat: no-repeat;
 }
 
+.main_container-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(Images/viber_image_2022-12-28_12-03-05-282.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  padding: 3%;
+}
+
+/*  Test  */
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 25px 25px 15px 25px;
+  width: 95vw;
+  height: auto;
+}
+
+.partners_section {
+  color: var(--white);
+  background-color: var(--partners_gray);
+  display: grid;
+  justify-items: center;
+}
+
+.icon-logo {
+  width: 100px;
+  height: auto;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+.toolbar a {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.toolbar .menu_button {
+  display: none;
+  position: fixed;
+  top: 10%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  left: 0;
+}
+
+.toolbar .menu_button .nav-item {
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: white;
+  text-decoration: none;
+  margin: 40px;
+}
+
+.toolbar nav .fa-bars {
+  font-size: 20px;
+  margin-right: 10px;
+  z-index: 999;
+}
+
+/* test */
+
 .main_title {
   color: var(--orange);
   margin-left: 2%;
   margin-right: 2%;
+  /* padding-bottom: 3rem; */
 }
 
 h1 {
   text-transform: uppercase;
   mix-blend-mode: multiply;
+  padding-bottom: 3rem;
 }
 
 h3 {
   mix-blend-mode: multiply;
 }
 
-.main_container > p {
-  border: 2px solid var(--white);
+h6 {
+  text-align: center;
+}
+.menu_button {
+  display: none;
+}
+
+.main_lecture-info {
+  border: 4px solid var(--white);
   background-color: var(--medium-gray);
   border-radius: 7px;
   margin-left: 2%;
   margin-right: 2%;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .conference_date {
   margin-left: 2%;
   margin-right: 2%;
+  font-size: 25px;
 }
 .conference_place {
   margin-left: 2%;
   margin-right: 2%;
+  padding-bottom: 4rem;
+  font-size: 15px;
+}
+
+.join {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 80px;
+  margin: 30px 40px;
+  background-color: #ec5242;
+}
+
+/* about CSS */
+
+.main_title-about {
+  color: var(--orange);
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.main_container-about > p {
+  border: 2px solid var(--medium-gray);
+  background-color: var(--white);
+  border-radius: 7px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.conference_date .conference_place {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.tirana_summit {
+  margin: 5%;
+  width: 90%;
+  height: 300px;
+  text-align: center;
+  color: var(--yellow);
+  background-image: url(Images/HVAC_2020_summit-tirana.png);
+  backdrop-filter: blur(100px);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 100px;
+}
+
+.belgrade_summit {
+  margin: 5%;
+  width: 90%;
+  height: 300px;
+  text-align: center;
+  color: var(--yellow);
+  background-image: url(Images/HVAC_summit_Beograd-2021.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 100px;
+}
+
+.past_summits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.past_summits > p {
+  text-align: center;
+}
+
+.past_summits_title {
+  margin-top: 5%;
 }
 
 i {
@@ -102,4 +265,17 @@ i {
   font-weight: 500;
   width: 30%;
   padding-left: 5%;
+}
+
+#hvac_logo {
+  width: 80px;
+  height: auto;
+  padding: 2%;
+}
+
+.hvac_logo {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
 }
