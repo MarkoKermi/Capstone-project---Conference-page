@@ -7,10 +7,8 @@ bar.addEventListener("click", () => {
   bar.classList.toggle("fa-xmark");
   if (menu_button.style.display === "block") {
     menu_button.style.display = "none";
-    // logo.style.display = "block";
   } else {
     menu_button.style.display = "block";
-    // logo.style.display = "none";
   }
 });
 
@@ -18,10 +16,8 @@ menu_button.addEventListener("click", () => {
   bar.classList.toggle("fa-xmark");
   if (menu_button.style.display === "block") {
     menu_button.style.display = "none";
-    // logo.style.display = "block";
   } else {
     menu_button.style.display = "block";
-    // logo.style.display = "none";
   }
 });
 
@@ -81,7 +77,7 @@ window.addEventListener("load", () => {
   }
 
   loadResume(() => {
-    const portfolioResume = document.querySelectorAll(".resumeButton");
+    const resumeButton = document.querySelectorAll(".resumeButton");
     Array.from(resumeButton).forEach((element) => {
       element.addEventListener("click", (e) => {
         e.preventDefault();
