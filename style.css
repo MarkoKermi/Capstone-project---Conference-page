@@ -79,7 +79,13 @@
   margin-bottom: 10px;
 }
 
-/* test */
+.middle-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
 
 .main_title {
   color: var(--orange);
@@ -433,8 +439,11 @@ i {
   }
 
   .middle-page {
-    display: block;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
   }
 
   /* #join {
