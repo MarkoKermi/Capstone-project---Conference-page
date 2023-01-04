@@ -34,7 +34,6 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
     </style>
-   
   </head>
 
   <!-- First page -->
@@ -42,35 +41,40 @@
     <main>
       <header>
         <section class="main_container">
-          <div class="toolbar" id="portfolio">
-            <div class="header_logo"></div>
-            <ul class="menu_button">
-              <li><a href="about.html" class="nav-item">About</a></li>
-              <li><a href="#" class="nav-item"></a>Program</li>
-              <li><a href="#" class="nav-item"></a>Join</li>
-              <li><a href="#" class="nav-item"></a>Sponsor</li>
-              <li><a href="#" class="nav-item"></a>News</li>
-              <li><a href="#" class="nav-item"></a>CC Campaign</li>
-            </ul>
-            <nav><i class="fa-solid fa-bars"></i></nav>
-          </div>
+        <div class="toolbar" id="portfolio">
+          <div class="header_logo"></div>
+          <nav class="menu_button">
+            <a href="about.html" class="nav-item">About</a>
+            <a href="#program" class="nav-item">Program</a>
+            <a href="#join" class="nav-item">Join</a>
+            <a href="#sponsor" class="nav-item">Sponsor</a>
+            <a href="#news" class="nav-item">News</a>
+          </nav>
+          <nav><i class="fa-solid fa-bars"></i></nav>
+        </div>
+
+        
           <h3 class="main_title">"Hello! HVAC world"</h3>
           <h1 class="main_title">heating, cooling & vetilation summit 2023</h1>
           <p class="main_lecture-info">
             We invite you to the fifth edition of the Heating, cooling and
             ventilation Engineering Forum, HVAC world Skopje 2023, which will
-            take place on 15 May at the Macedonian Philharmonic. HVAC world Skopje Forum will
-            host Mechanical engineers with outstanding projects. 
+            take place on 15 May at the Macedonian Philharmonic. HVAC world
+            Skopje Forum will host Mechanical engineers with outstanding
+            projects.
           </p>
           <p class="conference_date">2023.05.15(MON)~16(THU)</p>
           <p class="conference_place">@ Macedonian Philharmonic, Skopje</p>
         </section>
+        </div>
+        </main>
 
         <!-- Program information -->
 
         <section class="program_wraper">
           <h2 class="program_wraper_title">Main Program</h2>
           <div class="red_line"></div>
+          <div class="wrap-cards">
           <div class="background_img">
             <i style="font-size: 24px; color: white" class="fas">&#xf5da;</i>
             <div class="card_title">Lecture</div>
@@ -82,17 +86,13 @@
           <div class="background_img">
             <i style="font-size: 24px; color: white" class="fas">&#xf247;</i>
             <div class="card_title">AHU selection</div>
-            <p class="card_info">
-              Drawing and selection of air handling units
-            </p>
+            <p class="card_info">Drawing and selection of air handling units</p>
           </div>
 
           <div class="background_img">
             <i style="font-size: 24px; color: white" class="fas">&#xf5fd;</i>
             <div class="card_title">VRV selection</div>
-            <p class="card_info">
-              Drawing and selection of VRV units
-            </p>
+            <p class="card_info">Drawing and selection of VRV units</p>
           </div>
 
           <div class="background_img">
@@ -102,11 +102,40 @@
               Get your certificate for HVAC drawing and selection master
             </p>
           </div>
+        </div>
           <button class="join" id="join">Join the next training</button>
         </section>
+
+        <!-- Future Speakers -->
+        <section class="speakers">
+        <h2 class="program_wraper_title" id="news">Feature Speakers</h2>
+          <div class="red_line"></div>
+              <div></div>
+            </section>
+            </div>
+          </div>
+        </div>
+        <section class="featured_speakers" id="resume"></section>
+
+        <!-- Partners area -->
+        <section class="partners_section">
+          <h2 class="partners_section_title">Partner</h2>
+          <div class="red_line"></div>
+          <div class="partners" id="partners">
+            <a target="_blank" href="https://www.mf.ukim.edu.mk/" alt="MFS main page"><img class="icon-logo" src="Images/mfs-logo-www-s_0.png" alt="mfs main page"/></a>
+            <a target="_blank" href="https://www.icsgroup.mk/" alt="icsgroup main page"><img class="icon-logo" src="Images/lOGO-ICS-NEW.png" alt="icsgroup main page"/></a>
+            <a target="_blank" href="https://energosistem.com.mk/" alt="es main page"><img class="icon-logo" src="Images/logo_small_ES.png" alt="es main page"/></a>
+            <a target="_blank" href="http://www.pakson.mk/" alt="pakson main page"><img class="icon-logo" src="Images/pakson-za-banner.png" alt="pakson main page"/></a>
+          </section>
+    
+          <!-- futer area -->
+          <section class="hvac_logo">
+            <img id="hvac_logo" src="Images/HVAC_summit_logo.png" alt="hvac summit logo"></section>
+            <h6>HVAC Summit 2023, North Macedonia</h6>
+            <h6>Marko Kermichiev</h6>
+          </section>
       </header>
     </main>
-    <scrip
-    src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
