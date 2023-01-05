@@ -1,26 +1,28 @@
 // menu bar
 const bar = document.querySelector(".fa-bars");
-const logo = document.querySelector(".logo");
+// const logo = document.querySelector(".logo");
 const menu_button = document.querySelector(".menu_button");
-const exit = document.querySelector(".fa-xmark");
+const xmark = document.querySelector("#xmark");
 
-bar.addEventListener("click", () => {
-  bar.classList.toggle("fa-xmark");
-  if (menu_button.style.display === "block") {
+// Test
+function mobileMenu() {
+  if (menu_button.style.display === "block" && bar.style.display === "none") {
     menu_button.style.display = "none";
+    bar.style.display = "flex";
   } else {
     menu_button.style.display = "block";
+    bar.style.display = "none";
   }
-});
+}
 
-menu_button.addEventListener("click", () => {
-  bar.classList.toggle("fa-xmark");
-  if (menu_button.style.display === "block") {
-    menu_button.style.display = "none";
-  } else {
-    menu_button.style.display = "block";
-  }
-});
+bar.addEventListener("click", mobileMenu);
+menu_button.addEventListener("click", mobileMenu);
+xmark.onclick = () => {
+  menu_button.style.display = "block";
+  bar.style.display = "none";
+};
+
+// test
 
 // future speakers
 
