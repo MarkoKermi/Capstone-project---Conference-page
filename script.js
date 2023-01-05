@@ -2,6 +2,7 @@
 const bar = document.querySelector(".fa-bars");
 const logo = document.querySelector(".logo");
 const menu_button = document.querySelector(".menu_button");
+const exit = document.querySelector(".fa-xmark");
 
 bar.addEventListener("click", () => {
   bar.classList.toggle("fa-xmark");
@@ -27,7 +28,7 @@ const workCard = (resumeData) => {
   let content = "";
   resumeData.forEach((workData) => {
     content += `
-  <div class="speaker">
+  <div class="speaker" id="bg_img">
   <div class="speaker_box">
     <img class="speaker_appearance image" src="${workData.image}" alt="speaker image ">
   </div>
@@ -66,6 +67,13 @@ window.addEventListener("load", () => {
       image: "Images/ljubomir_ilkov.jpeg",
       name: "Ljubomir Ilkov",
       job: "CEO of ICS Group Macedonia",
+      subject: "Managing and growing heating and cooling busines",
+    },
+    {
+      id: "4",
+      image: "Images/besni_ademi-eco.jpeg",
+      name: "Besnik Ademi",
+      job: "CEO of Eco Vent",
       subject: "Managing and growing heating and cooling busines",
     },
   ];

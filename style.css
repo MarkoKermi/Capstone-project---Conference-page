@@ -14,11 +14,24 @@
   --red: #a83023;
   --cards_color: #d3d3d31e;
   --yellow: #ffff00;
-  --partners_gray: #555353;
+  --partners_gray: #272a31;
 }
 
 .menu_button.show {
   display: block;
+}
+
+.media-nav {
+  display: none;
+}
+
+.see {
+  display: none;
+}
+
+.featured-speakers {
+  display: grid;
+  justify-items: center;
 }
 
 .main_container {
@@ -28,7 +41,6 @@
   background-image: url(Images/viber_image_2022-12-28_12-03-05-282.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-  padding: 3%;
 }
 
 .partners_section {
@@ -36,6 +48,20 @@
   background-color: var(--partners_gray);
   display: grid;
   justify-items: center;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  justify-content: center;
+  column-gap: 30%;
+}
+
+.partners_section_title {
+  color: var(--gray);
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .icon-logo {
@@ -79,6 +105,38 @@
   margin-bottom: 10px;
 }
 
+.speaker_appearance {
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+}
+
+#bg_img {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-image: url(Images/background_speakers_logo.png);
+  background-repeat: no-repeat;
+  padding-left: 10px;
+}
+
+.speaker_info {
+  width: 70%;
+}
+
+.overlay {
+  margin-top: 0;
+  background: #ec524255;
+  width: 100%;
+  height: 100%;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .middle-page {
   display: flex;
   flex-direction: column;
@@ -109,37 +167,34 @@ h6 {
 }
 
 .menu_button,
-.header_logo {
+.header_logo,
+.sign-in {
   display: none;
 }
 
 .header_logo {
-  width: 80px;
+  width: auto;
   height: auto;
-  padding: 2%;
 }
 
 .main_lecture-info {
-  border: 4px solid var(--white);
-  background-color: var(--medium-gray);
-  border-radius: 7px;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
+  border: 5px solid white;
+  margin-right: 20px;
+  background-color: #f2f2f2;
+  color: #272a31;
+  padding: 10px;
 }
 
 .conference_date {
-  margin-left: 2%;
-  margin-right: 2%;
+  font-weight: 900;
   font-size: 25px;
+  margin-bottom: 0;
 }
 
 .conference_place {
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-bottom: 4rem;
   font-size: 15px;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .join {
@@ -167,11 +222,11 @@ h6 {
 }
 
 .text {
-  display: flex;
+  color: #272a31;
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  margin: 20px;
   text-align: center;
-  border: 4px solid var(--white);
-  background-color: var(--medium-gray);
-  border-radius: 7px;
 }
 
 .main_container-about > p {
@@ -294,9 +349,19 @@ i {
 
 .hvac_logo {
   display: flex;
-  flex-direction: column;
-  justify-items: flex-start;
-  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.title-footer {
+  font-size: 10px;
+  padding-top: 10px;
+  color: var(--black);
 }
 
 .speaker {
@@ -338,6 +403,20 @@ i {
     padding: 0;
   }
 
+  .media-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 0 20px;
+    gap: 20px;
+    color: white;
+    background-color: #272a31;
+  }
+
+  .media-nav i {
+    padding-top: 6px;
+  }
+
   .background_img {
     margin: 2px;
     display: flex;
@@ -351,10 +430,51 @@ i {
     margin-bottom: 3rem;
   }
 
-  .wrap-cards {
+  #nav-item {
+    color: var(--red);
+  }
+
+  .sign-in {
+    display: contents;
+  }
+
+  .sign-in {
+    display: inline-block;
+    border: 3px solid #ec5242;
+    color: #ec5242;
+    background-color: white;
+    padding: 2px 15px;
+    margin-left: 10px;
+  }
+
+  .see {
+    display: contents;
+    color: #d3d3d3;
+  }
+
+  .see-program {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #resume {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    justify-items: center;
+    margin: 20px 50px;
+  }
+
+  .wrap-cards {
+    display: flex;
+    justify-items: center;
+    margin: 0 8%;
+  }
+
+  .partners {
+    justify-content: center;
+    column-gap: 30%;
+    margin-bottom: 30px;
   }
 
   .desktop_summit_version {
@@ -404,18 +524,20 @@ i {
     background-color: white;
     mix-blend-mode: normal;
     backdrop-filter: blur(0px);
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 60px;
     position: relative;
     z-index: 0;
     opacity: 1;
     list-style: none;
     padding: 10px;
+    padding-left: 10%;
+    padding-right: 5%;
   }
 
-  #portfolio .header_logo {
+  /* #portfolio .header_logo {
     width: 120px;
-  }
+  } */
 
   #portfolio .menu_button {
     background-color: transparent;
@@ -446,8 +568,13 @@ i {
     margin-top: 5%;
   }
 
-  /* #join {
-    display: block;
-    align-items: center;
-  } */
+  .join {
+    display: none;
+    /* align-items: center; */
+  }
+
+  .main_page {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
