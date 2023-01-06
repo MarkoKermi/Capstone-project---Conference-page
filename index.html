@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capston project Portfolio</title>
+  <script src="https://kit.fontawesome.com/be8db3d534.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+  </style>
+  <script src="script.js" defer></script>
+</head>
+
+<!-- First page -->
+
+<body>
+  <main>
+    <header>
+      <nav class="mobile-only">
+        <div class="hamburguer-menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <nav class="small-nav desktop-only">
+        <ul class="small-nav__menu">
+            <li><img src="Images/facebook_logo.svg"></li>
+            <li><img src="Images/twitter_logo.svg"></li>
+            <li>Logout</li>
+            <li>Mypage</li>
+            <li>Macedonian</li>
+        </ul>
+    </nav>
+    <nav class="big-nav desktop-only">
+        <div class="big-nav__logo">
+            <a href="index.html"><img src="Images/HVAC_summit_logo.png" alt="HVAC summit 2023"></a>
+        </div>
+        <div class="big-nav__menu">
+            <ul>
+                <li><a href="about.html" class="color">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="big-nav__button">
+            <div>
+                Join
+            </div>
+        </div>
+    </nav>
+    <section class="header-content">
+        <h2 class="t-orange">"Hello! HVAC world"</h2>
+        <h1 class="texture-text">heating, cooling & vetilation summit 2023</h1>
+        <p class="p-box p-box--dark">
+          We invite you to the fifth edition of the Heating, cooling and
+          ventilation Engineering Forum, HVAC world Skopje 2023, which will
+          take place on 15 May at the Macedonian Philharmonic. HVAC world
+          Skopje Forum will host Mechanical engineers with outstanding
+          projects.
+        </p>
+        <h3>2023.05.15(MON)~16(THU)</h3>
+        <p>@ Macedonian Philharmonic, Skopje</p>
+    </section>
+
+    </header>
+
+  <!-- Program information -->
+
+  <section class="program_wraper">
+    <h2 class="program_wraper_title">Main Program</h2>
+    <div class="red_line" id="red_line"></div>
+    <div class="wrap-cards">
+      <div class="background_img">
+        <i style="font-size: 24px; color: white" class="fas">&#xf5da;</i>
+        <div class="card_title">Lecture</div>
+        <p class="card_info">
+          Explanation of HVAC basics, energy efficiency systems and best use
+        </p>
+      </div>
+
+      <div class="background_img">
+        <i style="font-size: 24px; color: white" class="fas">&#xf247;</i>
+        <div class="card_title">AHU selection</div>
+        <p class="card_info">Drawing and selection of air handling units</p>
+      </div>
+
+      <div class="background_img">
+        <i style="font-size: 24px; color: white" class="fas">&#xf5fd;</i>
+        <div class="card_title">VRV selection</div>
+        <p class="card_info">Drawing and selection of VRV units</p>
+      </div>
+
+      <div class="background_img">
+        <i style="font-size: 24px; color: white" class="fas">&#xf19d;</i>
+        <div class="card_title">Project</div>
+        <p class="card_info">
+          Get your certificate for HVAC drawing and selection master
+        </p>
+      </div>
+    </div>
+    <button class="join" id="join">Join the next training</button>
+    <div class="see-program"><a target="_blank" alt="see the whole program link" class="see">SEE THE WHOLE PROGRAM</a></div>
+  </section>
+
+  <!-- Future Speakers -->
+  <section class="speakers">
+    <h2 class="program_wraper_title" id="news">Feature Speakers</h2>
+    <div class="red_line">
+      <div></div>
+    </div>
+  </section>
+  <section class="featured_speakers" id="resume"></section>
+
+  <!-- Partners area -->
+  <section class="partners_section">
+    <h2 class="partners_section_title">Partner</h2>
+    <div class="red_line"></div>
+    <div class="partners" id="partners">
+      <a target="_blank" href="https://www.mf.ukim.edu.mk/" alt="MFS main page"><img class="icon-logo"
+          src="Images/mfs-logo-www-s_0.png" alt="mfs main page" /></a>
+      <a target="_blank" href="https://www.icsgroup.mk/" alt="icsgroup main page"><img class="icon-logo"
+          src="Images/lOGO-ICS-NEW.png" alt="icsgroup main page" /></a>
+      <a target="_blank" href="https://energosistem.com.mk/" alt="es main page"><img class="icon-logo"
+          src="Images/logo_small_ES.png" alt="es main page" /></a>
+      <a target="_blank" href="http://www.pakson.mk/" alt="pakson main page"><img class="icon-logo"
+          src="Images/pakson-za-banner.png" alt="pakson main page" /></a>
+    </div>
+
+    <div class="hvac_logo">
+      <img id="hvac_logo" src="Images/HVAC_summit_logo.png" alt="hvac summit logo">
+      <div class="title-footer">
+        <h6>HVAC Summit 2023, North Macedonia</h6>
+        <h6>Marko Kermichiev</h6>
+      </div>
+    </div>
+  </section>
+  </section>
+  </main>
+  <section class="floating-menu mobile-only">
+    <div class="floating-menu__items">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div>
+  </section>
+</body>
+</html>
