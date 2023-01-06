@@ -172,7 +172,6 @@ header {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 2fr 1fr;
   justify-content: center;
-  column-gap: 30%;
 }
 
 .partners_section_title {
