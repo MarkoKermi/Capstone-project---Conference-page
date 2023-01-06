@@ -1,26 +1,4 @@
 // menu bar
-// const bar = document.querySelector(".fa-bars");
-// // const logo = document.querySelector(".logo");
-// const menu_button = document.querySelector(".menu_button");
-// const xmark = document.querySelector("#xmark");
-
-// // Test
-// function mobileMenu() {
-//   if (menu_button.style.display === "block" && bar.style.display === "none") {
-//     menu_button.style.display = "none";
-//     bar.style.display = "flex";
-//   } else {
-//     menu_button.style.display = "block";
-//     bar.style.display = "none";
-//   }
-// }
-
-// bar.addEventListener("click", mobileMenu);
-// menu_button.addEventListener("click", mobileMenu);
-// xmark.onclick = () => {
-//   menu_button.style.display = "block";
-//   bar.style.display = "none";
-// };
 const hamburguerIcon = document.querySelector(".hamburguer-menu-icon");
 const floatingMenu = document.querySelector(".floating-menu");
 const body = document.querySelector("body");
