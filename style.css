@@ -91,6 +91,7 @@ header {
   background: url(Images/orange-bg.png) no-repeat center center;
   background-size: cover;
   color: white;
+  font-size: 50px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -382,9 +383,8 @@ i {
 
 .hvac_logo {
   display: flex;
-  align-content: center;
-  justify-content: flex-start;
-  gap: 30px;
+  justify-content: space-evenly;
+  gap: 80px;
   padding-top: 10px;
   width: 100%;
   height: auto;
