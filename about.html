@@ -34,30 +34,51 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
     </style>
+    <script src="script.js" defer></script>
   </head>
 
   <!-- First page -->
   <body>
-    <section class="main_container">
-      <div class="toolbar" id="portfolio">
-        <img class="header_logo"
-          src="Images/HVAC_summit_logo.png" alt="hvac_summit-logo"/>
-        <ul class="menu_button">
-          <li><a href="index.html" class="nav-item">Home</a></li>
-          <li><a href="index.html#program" class="nav-item">Program</a></li>
-          <li><a href="index.html#join" class="nav-item">Join</a></li>
-          <li><a href="index.html#sponsor" class="nav-item">Sponsor</a></li>
-          <li><a href="index.html#news" class="nav-item">News</a></li>
-        </ul>
-        <nav><i class="fa-solid fa-bars"></i></nav>
-        <button class="sign-in">JOIN</button>
+    <section id="first_page_about">
+    <nav class="mobile-only">
+      <div class="hamburguer-menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
       </div>
-      <div class="main_page">
-      <h3 class="main_title-about">"Hello! HVAC world"</h3>
-      <h1 class="main_title-about">
-        heating, cooling & vetilation summit 2023
-      </h1>
-      <p class="text">
+  </nav>
+  <nav class="small-nav desktop-only">
+      <ul class="small-nav__menu">
+          <li><img src="Images/facebook_logo.svg"></li>
+          <li><img src="Images/twitter_logo.svg"></li>
+          <li>Logout</li>
+          <li>Mypage</li>
+          <li>Macedonian</li>
+      </ul>
+  </nav>
+  <nav class="big-nav desktop-only">
+      <div class="big-nav__logo">
+          <a href="index.html"><img src="Images/HVAC_summit_logo.png" alt="HVAC Summit 2023"></a>
+      </div>
+      <div class="big-nav__menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Program</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Sponsor</a></li>
+              <li><a href="#">News</a></li>
+          </ul>
+      </div>
+      <div class="big-nav__button">
+          <div>
+              Join
+          </div>
+      </div>
+  </nav>
+  <section class="header-content">
+      <h2 class="t-orange">"Hello! HVAC world"</h2>
+      <h1 class="texture-text">heating, cooling & vetilation summit 2023</h1>
+      <p  id="text_about">
         We invite you to the fifth edition of the Heating, cooling and
         ventilation Engineering Forum, HVAC world Skopje 2023, which will take
         place on 15 May at the Macedonian Philharmonic. The theme of this
@@ -70,13 +91,11 @@
         knowledge, and the opportunity for professional networking at the
         highest level.
       </p>
-      <h6 class="contac_us">
-        Please contact us per Email for any further information for Heating,
-        cooling and ventilation summit 2023!
-      </h6>
-      <p class="email">kermicievmarko@gmail.com</p>
-    </div>
-    </section>
+      <h3 class="text_about">Please contact us per Email for any further information for Heating,
+        cooling and ventilation summit 2023!</h3>
+      <a>hvacworldsummit@gmail.com</a>
+  </section>
+</section>
 
     <section class="middle-page">
       <h4>HVAC summit 2023 logo</h4>
@@ -127,8 +146,16 @@
             <h6>HVAC Summit 2023, North Macedonia</h6>
             <h6>Marko Kermichiev</h6>
           </div>
-
-        <script src="script.js"></script>
+      <section class="floating-menu mobile-only">
+        <div class="floating-menu__items">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
       </section>
   </body>
 </html>

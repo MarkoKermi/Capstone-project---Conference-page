@@ -20,6 +20,7 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
   </style>
+  <script src="script.js" defer></script>
 </head>
 
 <!-- First page -->
@@ -27,44 +28,55 @@
 <body>
   <main>
     <header>
-      <section class="media-nav">
-        <i style="font-size:24px; color:white" class="fa">&#xf09a;</i>
-        <i style="font-size:24px; color:white" class="fa">&#xf099;</i>
-        <p class="logout">Logout</p>
-        <p class="my-page">My page</p>
-        <p class="Macedonian">Macedonian</p>
-      </section>
-      <section class="main_container">
-        <div class="toolbar" id="portfolio">
-          <img class="header_logo"
-          src="Images/HVAC_summit_logo.png" alt="hvac_summit-logo"/>
-          <nav class="menu_button">
-            <a href="about.html" class="nav-item" id="nav-item">About</a>
-            <a href="#program" class="nav-item">Program</a>
-            <a href="#join" class="nav-item">Join</a>
-            <a href="#sponsor" class="nav-item">Sponsor</a>
-            <a href="#news" class="nav-item">News</a>
-          </nav>
-          <button class="sign-in">JOIN</button>
-          <nav><i class="fa-solid fa-bars"></i></nav>
-          <i class="fa-solid fa-xmark" id="xmark"></i>
-          </a>
+      <nav class="mobile-only">
+        <div class="hamburguer-menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-
-        <div class="main_page">
-        <h3 class="main_title">"Hello! HVAC world"</h3>
-        <h1 class="main_title">heating, cooling & vetilation summit 2023</h1>
-        <p class="main_lecture-info">
+    </nav>
+    <nav class="small-nav desktop-only">
+        <ul class="small-nav__menu">
+            <li><img src="Images/facebook_logo.svg"></li>
+            <li><img src="Images/twitter_logo.svg"></li>
+            <li>Logout</li>
+            <li>Mypage</li>
+            <li>Macedonian</li>
+        </ul>
+    </nav>
+    <nav class="big-nav desktop-only">
+        <div class="big-nav__logo">
+            <a href="index.html"><img src="Images/HVAC_summit_logo.png" alt="HVAC summit 2023"></a>
+        </div>
+        <div class="big-nav__menu">
+            <ul>
+                <li><a href="about.html" class="color">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="big-nav__button">
+            <div>
+                Join
+            </div>
+        </div>
+    </nav>
+    <section class="header-content">
+        <h2 class="t-orange">"Hello! HVAC world"</h2>
+        <h1 class="texture-text">heating, cooling & vetilation summit 2023</h1>
+        <p class="p-box p-box--dark">
           We invite you to the fifth edition of the Heating, cooling and
           ventilation Engineering Forum, HVAC world Skopje 2023, which will
           take place on 15 May at the Macedonian Philharmonic. HVAC world
           Skopje Forum will host Mechanical engineers with outstanding
           projects.
         </p>
-        <p class="conference_date">2023.05.15(MON)~16(THU)</p>
-        <p class="conference_place">@ Macedonian Philharmonic, Skopje</p>
-      </div>
-      </section>
+        <h3>2023.05.15(MON)~16(THU)</h3>
+        <p>@ Macedonian Philharmonic, Skopje</p>
+    </section>
+
     </header>
 
   <!-- Program information -->
@@ -137,12 +149,18 @@
       </div>
     </div>
   </section>
-
-  <!-- futer area -->
- 
   </section>
   </main>
-  <script src="script.js"></script>
+  <section class="floating-menu mobile-only">
+    <div class="floating-menu__items">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div>
+  </section>
 </body>
-
 </html>
